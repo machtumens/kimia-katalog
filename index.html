@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Senyawa Kimia Sehari-hari</title>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;600;700&family=Nunito:wght@400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<div class="header">
+  <h1>Senyawa Kimia Sehari-hari</h1>
+  <p>Website ini di handcode secara 100% oleh Richard dan Gerald dan kreasi konten Kennard</p>
+<p>No AI</p>
+</div>
+
+<div class="tabs">
+  <button class="tab-btn active" onclick="switchTab('sabun', this)">🫧 Sabun Cuci Piring</button>
+  <button class="tab-btn" onclick="switchTab('soklin', this)">👕 So Klin Deterjen</button>
+  <button class="tab-btn" onclick="switchTab('kebersihan', this)">🧹 Kebersihan & Sanitasi</button>
+  <button class="tab-btn" onclick="switchTab('toiletries', this)">🛁 Perawatan Tubuh</button>
+  <button class="tab-btn" onclick="switchTab('p3k', this)">🩹 Pertolongan Pertama</button>
+  <button class="tab-btn" onclick="switchTab('dapur', this)">🍳 Dapur & Lainnya</button>
+</div>
+<div class="tab-line"></div>
+
+<div class="legend">
+  <div class="legend-item"><div class="legend-dot" style="background:var(--surfaktan)"></div> Surfaktan</div>
+  <div class="legend-item"><div class="legend-dot" style="background:var(--builder)"></div> Builder</div>
+  <div class="legend-item"><div class="legend-dot" style="background:var(--antibakteri)"></div> Antibakteri/Aktif</div>
+  <div class="legend-item"><div class="legend-dot" style="background:var(--pemutih)"></div> Pemutih/Oksidator</div>
+  <div class="legend-item"><div class="legend-dot" style="background:var(--filler)"></div> Filler/Pelarut</div>
+  <div class="legend-item"><div class="legend-dot" style="background:var(--aditif)"></div> Aditif</div>
+</div>
+
+<!-- ── TAB: SABUN CUCI PIRING ── -->
+<div id="panel-sabun" class="tab-panel active">
+  <div class="section-title">— Sabun Cuci Piring —</div>
+  <img class="product-img" src="images/sabun.jpg" alt="Sabun Cuci Piring" />
+  <div class="grid" id="grid-sabun"></div>
+</div>
+
+<!-- ── TAB: SO KLIN DETERJEN ── -->
+<div id="panel-soklin" class="tab-panel">
+  <div class="section-title">— So Klin Deterjen —</div>
+  <img class="product-img" src="images/soklin.jpg" alt="So Klin" />
+  <div class="grid" id="grid-soklin"></div>
+</div>
+
+<!-- ── TAB: KEBERSIHAN & SANITASI ── -->
+<div id="panel-kebersihan" class="tab-panel">
+  <div id="content-kebersihan"></div>
+</div>
+
+<!-- ── TAB: PERAWATAN TUBUH ── -->
+<div id="panel-toiletries" class="tab-panel">
+  <div id="content-toiletries"></div>
+</div>
+
+<!-- ── TAB: PERTOLONGAN PERTAMA ── -->
+<div id="panel-p3k" class="tab-panel">
+  <div id="content-p3k"></div>
+</div>
+
+<!-- ── TAB: DAPUR & LAINNYA ── -->
+<div id="panel-dapur" class="tab-panel">
+  <div id="content-dapur"></div>
+</div>
+
+<!-- Floating Info Button -->
+<button class="info-fab" id="infoFab" onclick="document.getElementById('infoModal').classList.toggle('open')" aria-label="Info">ℹ</button>
+<div class="info-modal" id="infoModal">
+  <p class="info-desc">"Website ini dibuat secara manual bukan karena ingin terlihat keren (saja) tapi juga karena kami tidak menemukan cara lain yang lebih imersif, kreatif, dan informatif untuk menjelaskan senyawa-senyawa kimia yang ada dalam produk-produk yang kita pakai sehari-hari"</p>
+  <hr class="info-divider" />
+  <p><strong>Handcoded by:</strong> Richard &amp; Gerald</p>
+  <p><strong>Content Created by:</strong> Kennard &amp; Gerald</p>
+  <p><strong>Source Code:</strong> <a href="https://github.com/machtumens/sumatif_kimia" target="_blank">github.com/machtumens/sumatif_kimia</a></p>
+  <p class="info-note">Feel free to use our code to educate yourselves and others about daily products, and their elements.</p>
+</div>
+
+<script src="js/data-sabun.js"></script>
+<script src="js/data-soklin.js"></script>
+<script src="js/data-kebersihan.js"></script>
+<script src="js/data-toiletries.js"></script>
+<script src="js/data-p3k.js"></script>
+<script src="js/data-dapur.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>

@@ -321,6 +321,16 @@ footer {
   text-align: center;
   padding: 28px 0 20px;
 }
+.intro-hero-img {
+  width: 220px;
+  height: 220px;
+  object-fit: cover;
+  border: 4px solid var(--ink);
+  border-radius: 4px;
+  box-shadow: 4px 4px 0 var(--ink);
+  display: block;
+  margin: 0 auto;
+}
 .intro-hero-emoji {
   font-size: 3.5rem;
   line-height: 1;
@@ -407,6 +417,14 @@ footer {
 }
 .intro-tier-icon { font-size: 1.8rem; line-height: 1; }
 .intro-tier-img { width: 48px; height: 48px; object-fit: contain; display: block; }
+.intro-tier-img--large {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border: 4px solid var(--ink);
+  border-radius: 4px;
+  box-shadow: 4px 4px 0 var(--ink);
+}
 .intro-tier-name {
   font-family: 'Caveat', cursive;
   font-size: 1.3rem;

@@ -23,7 +23,7 @@ const toiletriesData = [
         fungsi: 'Bahan aktif utama yang memperkuat enamel gigi melalui pembentukan fluorapatit dan mencegah karies.' },
       { nama: 'Kalsium Karbonat / Silika', rumus: 'CaCO₃ / SiO₂', kat: 'builder', katLabel: 'Abrasif',
         fungsi: 'Abrasif ringan yang membantu mengangkat plak dan noda permukaan gigi secara mekanis.' },
-      { nama: 'Natrium Lauril Sulfat', rumus: 'SLS', kat: 'surfaktan', katLabel: 'Surfaktan',
+      { nama: 'Sodium Lauryl Sulfat', rumus: 'SLS', kat: 'surfaktan', katLabel: 'Surfaktan',
         fungsi: 'Menghasilkan busa dan membantu distribusi bahan aktif ke seluruh permukaan gigi dan gusi.' },
       { nama: 'Sorbitol / Gliserin', rumus: 'Poliol', kat: 'aditif', katLabel: 'Humektan',
         fungsi: 'Humektan yang menjaga tekstur pasta tidak mengering dan memberi rasa manis tanpa kariogenik.' },

@@ -540,6 +540,16 @@ footer {
   font-family: 'Caveat', cursive;
   font-size: 1.1rem;
   color: var(--ink);
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+}
+.intro-why-list li::before {
+  content: '▸';
+  color: var(--surfaktan);
+  font-size: 1rem;
+  flex-shrink: 0;
+  line-height: 1.55;
 }
 
 .intro-cta {

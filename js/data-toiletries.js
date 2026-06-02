@@ -19,7 +19,7 @@ const toiletriesData = [
     produk: '2. Pepsodent / CloseUp — Pasta Gigi',
     img: 'pepsodent.jpg',
     senyawa: [
-      { nama: 'Natrium Fluorida / MFP', rumus: 'NaF / Na₂PO₃F', kat: 'antibakteri', katLabel: 'Pelindung Enamel',
+      { nama: 'Sodium Fluoride / Sodium Monofluorophosphate (MFP)', rumus: 'NaF / Na₂PO₃F', kat: 'antibakteri', katLabel: 'Pelindung Enamel',
         fungsi: 'Bahan aktif utama yang memperkuat enamel gigi melalui pembentukan fluorapatit dan mencegah karies.' },
       { nama: 'Kalsium Karbonat / Silika', rumus: 'CaCO₃ / SiO₂', kat: 'builder', katLabel: 'Abrasif',
         fungsi: 'Abrasif ringan yang membantu mengangkat plak dan noda permukaan gigi secara mekanis.' },

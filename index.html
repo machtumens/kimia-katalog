@@ -16,7 +16,8 @@
 </div>
 
 <div class="tabs">
-  <button class="tab-btn active" onclick="switchTab('sabun', this)">🫧 Sabun Cuci Piring</button>
+  <button class="tab-btn active" onclick="switchTab('intro', this)">📖 Pengenalan</button>
+  <button class="tab-btn" onclick="switchTab('sabun', this)">🫧 Sabun Cuci Piring</button>
   <button class="tab-btn" onclick="switchTab('soklin', this)">👕 So Klin Deterjen</button>
   <button class="tab-btn" onclick="switchTab('kebersihan', this)">🧹 Kebersihan & Sanitasi</button>
   <button class="tab-btn" onclick="switchTab('toiletries', this)">🛁 Perawatan Tubuh</button>
@@ -34,8 +35,79 @@
   <div class="legend-item"><div class="legend-dot" style="background:var(--aditif)"></div> Aditif</div>
 </div>
 
+<!-- ── TAB: PENGENALAN ── -->
+<div id="panel-intro" class="tab-panel active">
+  <div class="intro-wrap">
+
+    <div class="intro-hero">
+      <div class="intro-hero-emoji">⚗️</div>
+      <h2 class="intro-hero-title">Apa itu Senyawa Kimia?</h2>
+      <p class="intro-hero-sub">Semua benda di sekitar kita tersusun dari materi. Materi bisa berupa unsur, senyawa, atau campuran.</p>
+    </div>
+
+    <div class="intro-def-box">
+      <span class="intro-def-label">Definisi</span>
+      <p class="intro-def-text"><strong>Senyawa kimia</strong> adalah zat murni yang terbentuk dari dua atau lebih unsur yang bergabung secara kimia dengan perbandingan tertentu dan tetap. Senyawa punya sifat yang <em>berbeda</em> dari unsur-unsur pembentuknya.</p>
+      <p class="intro-def-example">Contoh: Air (H₂O) = Hidrogen (gas mudah terbakar) + Oksigen (gas pendukung api) → tapi hasilnya adalah cairan yang memadamkan api!</p>
+    </div>
+
+    <div class="intro-section-title">— Tingkatan Materi —</div>
+    <div class="intro-tier-grid">
+      <div class="intro-tier-card">
+        <div class="intro-tier-icon"><img src="images/unsur.png" alt="Unsur" class="intro-tier-img" /></div>
+        <div class="intro-tier-name">Unsur</div>
+        <div class="intro-tier-desc">Zat murni yang tidak bisa dipecah lagi secara kimia. Terdiri dari satu jenis atom.</div>
+        <div class="intro-tier-ex">Contoh: H, O, Na, Cl, C</div>
+      </div>
+      <div class="intro-tier-card">
+        <div class="intro-tier-icon"><img src="images/senyawa.png" alt="Senyawa" class="intro-tier-img" /></div>
+        <div class="intro-tier-name">Senyawa</div>
+        <div class="intro-tier-desc">Gabungan dua atau lebih unsur dengan ikatan kimia. Punya rumus kimia tetap.</div>
+        <div class="intro-tier-ex">Contoh: H₂O, NaCl, CO₂, C₁₂H₂₂O₁₁</div>
+      </div>
+      <div class="intro-tier-card">
+        <div class="intro-tier-icon"><img src="images/campuran.png" alt="Campuran" class="intro-tier-img" /></div>
+        <div class="intro-tier-name">Campuran</div>
+        <div class="intro-tier-desc">Gabungan dua atau lebih zat tanpa ikatan kimia. Bisa dipisahkan secara fisika.</div>
+        <div class="intro-tier-ex">Contoh: Air garam, udara, tanah</div>
+      </div>
+    </div>
+
+    <div class="intro-section-title">— Jenis Ikatan Kimia —</div>
+    <div class="intro-bond-grid">
+      <div class="intro-bond-card">
+        <div class="intro-bond-name">🔗 Ikatan Ion</div>
+        <div class="intro-bond-desc">Terjadi antara logam dan nonlogam. Elektron berpindah dari satu atom ke atom lain. Biasanya membentuk kristal padat dengan titik leleh tinggi.</div>
+        <div class="intro-bond-ex">NaCl (garam dapur), NaOH (soda api)</div>
+      </div>
+      <div class="intro-bond-card">
+        <div class="intro-bond-name">🤝 Ikatan Kovalen</div>
+        <div class="intro-bond-desc">Terjadi antar nonlogam. Elektron dipakai bersama-sama. Bisa berbentuk gas, cair, atau padat pada suhu ruang.</div>
+        <div class="intro-bond-ex">H₂O (air), CO₂ (karbon dioksida), C₁₂H₂₂O₁₁ (gula)</div>
+      </div>
+    </div>
+
+    <div class="intro-section-title">— Kenapa Ini Penting? —</div>
+    <div class="intro-why-box">
+      <p>Produk-produk yang kita pakai sehari-hari — sabun, deterjen, obat, pasta gigi, pembersih lantai — semuanya adalah <strong>campuran senyawa kimia</strong> yang dirancang untuk tujuan tertentu.</p>
+      <p>Memahami senyawa di balik label produk membantu kita:</p>
+      <ul class="intro-why-list">
+        <li>🔍 Tahu apa yang kita pakai di tubuh dan rumah kita</li>
+        <li>⚠️ Menghindari kombinasi bahan yang berbahaya</li>
+        <li>♻️ Memilih produk yang lebih ramah lingkungan</li>
+        <li>💡 Memahami cara kerja setiap produk secara ilmiah</li>
+      </ul>
+    </div>
+
+    <div class="intro-cta">
+      <p class="intro-cta-text">Siap? Jelajahi tab-tab di atas untuk melihat senyawa kimia dalam produk sehari-hari! 👆</p>
+    </div>
+
+  </div>
+</div>
+
 <!-- ── TAB: SABUN CUCI PIRING ── -->
-<div id="panel-sabun" class="tab-panel active">
+<div id="panel-sabun" class="tab-panel">
   <div class="section-title">— Sabun Cuci Piring —</div>
   <img class="product-img" src="images/sabun.jpg" alt="Sabun Cuci Piring" />
   <div class="grid" id="grid-sabun"></div>
